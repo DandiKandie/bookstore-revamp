@@ -82,13 +82,18 @@ nav {
      margin: 1.1rem 1.1rem;
 }
 
-.services-para{
+.services-para, 
+.location-para{
      margin: 1rem;
      font-size: .8rem;
      text-align: left;
      padding: .5rem;
 }
 
+.uppercase {
+     text-transform: uppercase;
+     font-weight: bold;
+}
 /***************************************
 ****        Location styles         ****
 ****************************************/
@@ -110,20 +115,35 @@ nav {
      justify-content: space-between;
 }
 
-.location-para {
+/* .location-para {
      font-size: .8rem;
      text-align: center;
      margin-bottom: .6rem;
-}
+} */
 
 .tele, 
-.social {
+.location-social {
      color: #fff;
+     text-align: center;
 }
 
+.location-social{
+     font-size: .8rem;
+}
+
+.social {
+     display: inline-block;
+     margin-bottom: .4rem;
+     color: white;
+}
 iframe {
+     display: block;
+     max-width: 300px;
+     max-height: 300px;
      width: 95%;
      height: 40vh;
+     margin-left: auto;
+     margin-right: auto;
      margin-bottom: 2rem;
 }
 
@@ -163,21 +183,29 @@ footer {
 ****       Changing ViewPort         ****
 ****************************************/
 @media screen and (min-width:640px) {
+     iframe {
+          display: block;
+          width: 400px;
+          height: 400px;
+          margin-right: auto;
+          margin-left: auto;
+     }
+
      .about-section {
-          margin: 1.4rem;
-          font-size: .8rem;
+          margin: .5rem;
           display: flex;
-          /* flex-direction: column; */
-          /*align-items: center;
-          justify-content: flex-start */
-          /* flex-wrap: wrap; */
+          align-content:space-around;
+          flex-direction: row;
+          align-items: stretch;
+          flex-wrap: nowrap;
+          justify-content: center;
      }
-     
-     .about-section {
-          width: 33%;
-          border-right: 1px solid black;
-     }
+
      .aboutus-section > h4 {
-          text-align: center;
+          margin-bottom: .3rem;
+     }
+     .aboutus-section {
+          width: 90rem;
+          padding: .8rem;
      }
 }
