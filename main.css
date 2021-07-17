@@ -104,7 +104,8 @@ nav {
 }
 
 .location-heading {
-     border-bottom: .2rem solid white;
+     text-decoration: white underline solid;
+     text-underline-offset: .5rem;
      letter-spacing: .2rem;
      font-size: 1.4rem;
 }
@@ -135,6 +136,7 @@ nav {
      display: inline-block;
      margin-bottom: .4rem;
      color: white;
+     text-decoration: white underline;
 }
 iframe {
      display: block;
@@ -183,10 +185,10 @@ footer {
 ****       Changing ViewPort         ****
 ****************************************/
 @media screen and (min-width:640px) {
-     iframe {
+     .location-map {
           display: block;
-          width: 400px;
-          height: 400px;
+          width: 500px;
+          height: 500px;
           margin-right: auto;
           margin-left: auto;
      }
@@ -207,5 +209,27 @@ footer {
      .aboutus-section {
           width: 90rem;
           padding: .8rem;
+     }
+}
+
+@media screen and (min-width: 768px) {
+     .location {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+     }
+
+     .location-heading {
+          align-self: center;
+     }
+     
+     .location-para{
+          text-align: center;
+     }
+  
+     iframe {
+          display: block;
+          max-width: 600px;
+          min-height: 400px;
      }
 }
