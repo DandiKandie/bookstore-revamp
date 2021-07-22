@@ -1,6 +1,6 @@
 /* Global Styles*/
 
-*{
+*, *::after, *::before{
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -265,8 +265,8 @@ footer {
         a:hover {
           background-color: #fff;
           color: #0054a6;
-          padding: 6px 8px;
-          border-radius: 20px;
-          font-size: 1.1rem;
+          padding: 4px 6px;
+          border-radius: 15px;
+          font-size: 1rem;
         }
 }     
